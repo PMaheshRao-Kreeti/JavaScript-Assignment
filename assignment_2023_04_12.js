@@ -25,7 +25,7 @@ reassign();
 
 const newPI = 3.14;
 
-newPI = 3123;
+newPI = 3123; // On reassignment operation we will get an error message TypeError: Assignment to constant variable. Because we can't reassign a const variable in Js.
 
 // 4. Write a program to declare a const, let, var variable within an if statement and try to access the variable outside the if block, what is the result?
 
@@ -36,8 +36,8 @@ if (true) {
 }
 
 console.log(var_num);
-console.log(let_num);
-console.log(PI);
+console.log(let_num); //we will get an error message of ReferenceError: let_num is not defined . Because let can be accessed within the initialized block or it's child block.
+console.log(PI); //we will get an error message of ReferenceError: PI is not defined . Because const can be accessed within the initialized block or it's child block.
 
 // 5. Write a program that concatenates two or more strings and prints the result to the console.
 
